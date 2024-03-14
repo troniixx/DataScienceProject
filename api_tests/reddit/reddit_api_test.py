@@ -9,10 +9,10 @@ SECRET = "api_tests/reddit/client_secret.txt"
 SAVE_PATH = "json_files/reddit/reddit_test.json"
 
 # Read the client id and secret from the file and saving them in a constant
-with open(ID) as f:
+with open(ID, "r", encoding = "utf8") as f:
     cid = f.read().strip()
     
-with open(SECRET) as f:
+with open(SECRET, "r", encoding = "utf8") as f:
     csec = f.read().strip()
 
 # Function to get the url of a reddit post
