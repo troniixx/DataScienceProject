@@ -4,9 +4,9 @@ from os.path import basename
 import asyncprawcore.exceptions
 
 # Path to the client id, secret and path to save the data 
-ID = "Computational Science/ESC403/Course Project/API Tests/Reddit/clientid.txt"
-SECRET = "Computational Science/ESC403/Course Project/API Tests/Reddit/clientsecret.txt"
-SAVE_PATH = "Computational Science/ESC403/Course Project/API Tests/Reddit/reddit_test.json"
+ID = "api_tests/reddit/clientid.txt"
+SECRET = "api_tests/reddit/client_secret.txt"
+SAVE_PATH = "json_files/reddit/reddit_test.json"
 
 # Read the client id and secret from the file and saving them in a constant
 with open(ID) as f:
