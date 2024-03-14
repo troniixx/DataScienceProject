@@ -66,11 +66,15 @@ async def get_comments_top_posts(reddit, subreddit_name, limit=5, comments_limit
 
 # Main function where reddit api gets called and then used for the rest of the script
 async def main():
+    # DO NOT CHANGE BELOW
     reddit = asyncpraw.Reddit(
             client_id= cid,
             client_secret= csec,
             user_agent= "DataScience by /u/TroNiiXx https://www.github.com/TroNiiXx/uzh"
     )
+    # DO NOT CHANGE ABOVE
+    
+    
     # header line
     comments_data = {
         "header": {
@@ -87,6 +91,5 @@ async def main():
     print(f"Data saved to {basename(SAVE_PATH)}")
     await reddit.close()
     
-# standart call to main
 if __name__ == "__main__":
     asyncio.run(main())
