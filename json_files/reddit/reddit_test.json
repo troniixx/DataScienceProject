@@ -3,7 +3,29 @@
         "format": "post_title: [comment1, comment2, ...]"
     },
     "data": {
-        "6 months job seeking permit - does job start need to be under 6 months?": [],
+        "Choosing between MSc in RSC and MSc in EEIT at ETH": [
+            "For your interests, both are good. Consider the following:\n\n- RSC is 90 credits, while EEIT is 120 credits\n- EEIT does not have a mandatory internship\n- EEIT has two semester projects (or one semester project + internship), while RSC has fixed 1 semester project + 1 internship\n- Master thesis: Maybe already check who you would like to do your thesis with, and check if they are accredited for your degree.\n- Check what courses you want to take exactly and if they are offered in the respective degree.",
+            "I know that RSC offers many lectures in the directions you’re interested in. Not sure about Electrical Engineering. I’d recommend to check the Vorlesungsverzeichnis to see what degree allows you to pick the selection of courses more suited towards your interest and decide based on that. \nAlso check if any of the degrees have mandatory internships so you can take that into account when deciding.\nRegarding prestige of the degree I don’t think it matters, both are very good degrees at ETH",
+            "You can take exactly same courses for EEIT and RSC, but still I would recommend RSC because they provide mandatory internship."
+        ],
+        "Robotics PhD": [],
+        "Non-EU Part-time University Work - 6 Months Limit?": [],
+        "Internship ibm": [
+            "Look at glassdoor or similar websites. Usually there is not a range but a fixed salary for intern positions. You dont do an internship for the money otherwise there are better options",
+            "Sure of course it’s not the goal to make money. It’s more than I heard that IBM is not paying for people doing Master thesis, and Zurich is quite expensive, so it’s also something to keep in mind, would I have to make something besides to make money or not.",
+            "If you are at ETH Zurich you cannot be paid for a master's thesis, the companies cannot change that. If you have a master's degree already then the internship salary is similar to the ETH PhD salary for Computer Science.",
+            "It’s for an internship, not for the master thesis. And I don’t have my master’s degree yet.",
+            "If you have a bachelor's degree then the salary is around 40% lower."
+        ],
+        "Grade changing after Noteneinsicht": [
+            "It has to be approved and processed by central administration. Depending on their current load of grade corrections and how fast everyone involved takes the process at hand.",
+            "I had this once but it wasn’t urgent (passed the block and was not about to request my diploma). At some point they removed the entire blcok and again a week or two lter I had my marks back with the change. But in total this was about 8 weeks, already well into the Semester",
+            "I had this too in this block. It took 10 days after Einsicht, then I got a new mail titled „Resultatmeldung“ (like when you are initially notified that the results are out) and my grade on mystudies was updated."
+        ],
+        "6 months job seeking permit - does job start need to be under 6 months?": [
+            "Read through this thread, maybe you can get some info from it.\n\nhttps://www.reddit.com/r/askswitzerland/s/OE7SXdMH7P",
+            "Thanks for this, had no idea how to even browse this before you sending"
+        ],
         "Visa processing time": [
             "I've seen the opposite. Processing times for Non-EU study visas can be fairly quick.\n\nIs there any reason you haven't started the process now, though? Iirc, what matters are the letter of acceptance and proof of funds. The university diploma is more of an ETH requirement, and they generally give you several weeks after the start of the semester to present the physical diploma.\n\nMy recommendation would be to get the paperwork in now. Make sure you have a bank account with a bank permitted by the Canton of Zürich with sufficient proof of funds (different cantons allow different banks).\n\nAlso, if you haven't already done so, reach out to the student housing cooperatives, immediately, to begin your housing search.\n\nEdit: It looks like the university diploma depends on what the embassy in your particular country requires, and it can apparently vary. If you haven't spoken with them, it may be worth while to ask if this is an actual need, and if either a transcript or written confirmation that you will be graduating is sufficient.",
             "I am still in my bachelor's degree, 4-th course. Local embassy requires at least a proof that I've passed all the exams, and I'm working on it.\n\nFurthermore, my family will have to take a debt to provide 21000 CHF to the embassy if I send the visa application before July (That's when I'll get the results about government scholarship).\n\nMoreover, If I don't get a scholarship, I'm willing to risk taking debt and somehow working in parallel to get 21000 for the next year's permit renewal. And eventually, hoping to get a job to pay the debt of my family.\n\n  \nAnother concern is identifying a bank listed by FINMA that imposes minimal charges for depositing money from my native bank account, as none of my native banks are included in the FINMA list.",
@@ -23,39 +45,10 @@
             "Hi, I had this problem last year. I was also in math msc and had an average of 4.2 lol  \nYou will not be kicked out of the program for sure. Every student writes a thesis, regardless of average.  \nWhat are you interested in? There is also the possibility of writing your thesis in a different department (I wrote mine in D-INFK on machine learning, with a supervisor from D-MATH; I did, however, do my bachelors at ETH too so my math supervisor was my bachelor thesis supervisor).\n\nFor me, the most effective method was going to professors in person, either in lectures or at academic events, and asking them directly. It took me 2 months to find my thesis, so be patient. You can also ask your TAs, who are usually PhD students, if they have any thesis opportunities in their groups. Professors are super busy and barely respond to emails so going to any office hours is the best bet. Good luck!",
             "I would send a single follow up email if you did not receive a response within 2 weeks. Professors get quite a large number of emails, and something like this would probably be lower on their priority of things to reply to. A single follow up email if you didn't get a response would be fine, just kindly word it.",
             "Of course you will find it (never heard of somebody who never managed to find an advisor ever) it’s hard for everyone. There’s just too few of them and too many students. What are you interested in exactly?",
+            "Contact PhD students/postdocs in the groups directly. If they're vouching for you it will help.",
             "EPFL, here, ask for some help from some one supportive in your section. If your feeling anxious. You might be offered to put some one in CC of your mail to motivate teacher to read/answer your email.\n\nSome teacher are delusional about student capacity or interest in projects. Rejections can be really hard to deal with especially when you just end your exam and needs some confidence boost.\n\nThe school will never throw you away for not finding a master project if you are actively looking for one.\n\nIt can be hard or easy, some teacher ask very tough question about papers they published others doesn't even read your CV or grades to take some one for a thesis. It's depends.\n\nKeep in mind things are often not easy for the teacher/lab as well.",
             "Mathematics in data science and neural network. I focused on optimization, but did terrible on all optimization courses. So I don’t think I could get in any optimization groups. Now I am looking for some project in deep learning and contacting professors in Seminar for Applied Mathematics.",
             "Yeah as far as I know Bandeira rejects many. Just keep looking, you’ll fine somebody eventually. But to be fair it doesn’t sound like you are asking everybody, you have specific ideas in mind and ofc this will make things harder."
-        ],
-        "Taking more than 6 credits while doing MSc Thesis": [
-            "If you tell us what you study, we can dig up the relevant regulations for you. ETH-wide, there are no such constraints but your specific program might have constraints.",
-            "No. I took (well repeated) a course of 9 credits during my master thesis (I could skip the project thought, I only had to do the exam)\n\nOn top of that I took a SHS course of 2 credits. So overall 11 credits on top of the thesis.\n\nOverall it as bit of a pain but it only had a minimal impact on my thesis overall.\n\nMy impression is that you can organize your studies as you wish (just take care of deadlines), but try and make sound decisions and plan well.\n\nEdit: yes, in CS you need to have passed the interfocus courses, some majors courses and have a least amount of credit point.",
-            "Well According to the regulations it's not allowed to start the master thesis if you are MISSING credits. I guess it's fine to take more if you want if you already completed everything but some credits.",
-            "I'm doing CSE",
-            "Missing credits for your Bachelor’s degree that is! As you may know as an ETH student you can enroll in a Masters program ahead of finishing your Bachelor’s degree. This might for example be useful if you only have a small number of ECTS left so you already want to start doing you master courses. This means you can finish all Master courses before applying for your Bachelor’s degree. In order to prevent people from finishing a Masters degree without a Bachelor’s degree, this rule (probably) exists",
-            "In that case, you need to have completed your BSc, completed the admission prerequisits (in case that you got some), completed at least two core courses, completed at least five courses (including a seminar) in fields of specialization, completed the semester paper and either have taken Scientific Works in Mathematics or Scientific Works in Physicsis. If you satisfy those constraints but have credits missing, then that's not an issue - you can do those remaining credits next to or even after the master's thesis."
-        ],
-        "Giving away spot for ETH EPFL challenge! (female, March 21.-24)": [],
-        "Msc Quantum Engineering": [
-            "Physics",
-            "What can you do with Physics, apart from becoming a teacher, in case you ultimately decide that you don't want to pursue Quantum Engineering?",
-            "Working as a consultant and fucking around with SAP",
-            "A lot. Physics gives you extremely important skills that are sought after in the workplace as well, if you don’t want to pursue research"
-        ],
-        "UZH/ETH joint MSc programs": [
-            "UZH and the other cantonal universities have the lead in certain fields. Joint degrees are a way for ETH and EPFL to get around these restrictions.  \n\nETH gets an outlet for their faculty to teach graduate courses, which are a general expectation for faculty career advancement and a pipeline for identifying and attracting talent for research assistants and PhD candidates. UZH and the other universities get the same benefits, along with association with the ETH/EPFL brands. \n\nAs far as the actual programs, each of them are unique. You have to speak to whoever your administrative point of contact is to learn what is and isn’t permissible."
-        ],
-        "RSC 2024 Fall Whatsapp GC": [
-            "is there something similar for computer science?",
-            "Is there something like this for EEIT",
-            "let’s do one for mechanical engineering!",
-            "Wdym by rsc?",
-            "I sent u a DM!",
-            "is there something also for Physics?",
-            "I am interested as well",
-            "Would be great.",
-            "You guys already got your answers for mech-e ? Im still waiting",
-            "Robotics systems and control MSc"
         ]
     }
 }
