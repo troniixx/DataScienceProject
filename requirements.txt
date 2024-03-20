@@ -1,0 +1,18 @@
+# *** Work in Progess *** #
+re
+pandas
+polars
+spacy
+nltk
+matplotlib.pyplot
+seaborn
+praw
+asyncpraw
+requests
+sys
+os
+tqdm
+zstandard
+csv
+asyncio
+asyncprawcore.exceptions
