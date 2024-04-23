@@ -3,6 +3,17 @@
 
 ### Process
 
+#### Summary
+
+- Archived Data of Reddit Posts
+- Perform Sentiment Analysis on posts
+- Analyze Correlation of Data:
+  -  Sentiment Data and Real world Events & Topics
+  -  Community Rating and Sentiment Data (Overall Community Response)
+  -  Trends of Sentiment
+- Compare different Communities/Subreddits
+  - Response to same topic / in same time frame
+
 #### Step 1
 - Clean up Data
 	- Relevant Columns of Reddit Posts:
@@ -47,6 +58,20 @@ Use pretrained model
 Required Features:
 - Sentiment Analysis
 
+### Questions to consider
 
+What NLP Model to use?
+    Pattern
+    spaCy?
 
-
+What topics to observe sentiment responses on?
+    Covid Quarantine, Starting Early 2020
+    ChatGPT and AI, Early 2023
+    Controversial Topics
+        Celebrity News/Deaths, e.g. Queen Elizabeth Death
+        Wars/Conflicts; Russia-Ukraine, Israel-Palestine
+    
+What data processing can be done?
+    EDA on data?
+        Time Series Analysis;
+    Predictor Model for classificatino?
