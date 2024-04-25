@@ -1,15 +1,16 @@
-import io
 import csv
 from tqdm import tqdm
-import zstandard as zstd
+from io import TextIOWrapper
+from zstandard import ZstdDecompressor
+from os.path import basename, splitext
 
-ZST_FILE = "data/raw/AmongUsPorn_submissions.zst"
-OUTPUT_PATH = "data/cleaned/AmongUsPorn_submissions_cleaned.csv"
+ZST_FILE = "data/raw/Switzerland_comments.zst"
+OUTPUT_PATH = f"data/cleaned/{splitext(basename(ZST_FILE))[0]}_cleaned.csv"
 
 with open(ZST_FILE, "rb") as compressed:
-    dctx = zstd.ZstdDecompressor()
+    dctx = ZstdDecompressor()
     with dctx.stream_reader(compressed) as reader:
-        text_stream = io.TextIOWrapper(reader, encoding="utf-8")
+        text_stream = TextIOWrapper(reader, encoding="utf-8")
         text_stream_wrapped = tqdm(text_stream, desc="Processing lines")
         
         # Open the CSV file in write mode
