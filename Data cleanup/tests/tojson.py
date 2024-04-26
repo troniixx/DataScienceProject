@@ -19,7 +19,7 @@ print("The .zst file has been decompressed.")
 # Assuming each line in the decompressed file is a separate JSON object
 json_objects = []
 # Obtain the number of lines for the progress bar
-num_lines = sum(1 for line in open(JSON_FILE, "r", encoding="utf-8"))
+num_lines = sum(1 for _ in open(JSON_FILE, "r", encoding="utf-8"))
 
 with open(JSON_FILE, "r", encoding="utf-8") as file:
     with tqdm(total=num_lines, desc='Converting to JSON objects', colour="#1E90FF") as pbar:
