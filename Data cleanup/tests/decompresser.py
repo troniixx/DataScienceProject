@@ -4,7 +4,7 @@ from io import TextIOWrapper
 from zstandard import ZstdDecompressor
 from os.path import basename, splitext
 
-ZST_FILE = "data/raw/Switzerland_comments.zst" # CHANGE THIS
+ZST_FILE = "data/raw/PoliticsPeopleTwitter_comments.zst" # CHANGE THIS
 OUTPUT_PATH = f"data/cleaned/{splitext(basename(ZST_FILE))[0]}_cleaned.csv" # DO NOT CHANGE THIS
 
 with open(ZST_FILE, "rb") as compressed:
