@@ -22,7 +22,7 @@ json_objects = []
 num_lines = sum(1 for line in open(JSON_FILE, "r", encoding="utf-8"))
 
 with open(JSON_FILE, "r", encoding="utf-8") as file:
-    with tqdm(total=num_lines, desc='Converting to JSON objects') as pbar:
+    with tqdm(total=num_lines, desc='Converting to JSON objects', colour="#1E90FF") as pbar:
         for line in file:
             try:
                 json_object = json.loads(line)
