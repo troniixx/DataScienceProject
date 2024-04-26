@@ -1,8 +1,8 @@
 import json
-import zstandard as zstd
 from tqdm import tqdm
+import zstandard as zstd
+from os import makedirs
 from os.path import basename, splitext
-import os
 
 # Replace with the path to your .zst file
 ZST_FILE = "data/raw/Switzerland_comments.zst"
@@ -33,9 +33,8 @@ with open(JSON_FILE, "r", encoding="utf-8") as file:
 
 print("The .zst file has been converted to JSON objects. Starting JSON file generation...")
 
-# The path where you want to save the formatted JSON array of objects
 pretty_json_dir = "data/pretty jsons"
-os.makedirs(pretty_json_dir, exist_ok=True)  # Ensure directory exists
+makedirs(pretty_json_dir, exist_ok=True)  # Ensure directory exists
 JSON_FILE_PRETTY = f"{pretty_json_dir}/{splitext(basename(ZST_FILE))[0]}_pretty.json"
 
 # Write the list of JSON objects to a JSON file
