@@ -9,4 +9,4 @@ df = df.dropna()
 #print(df.head())
 
 # get categories of the columns
-print(df.dtypes)
+print(df.columns)
