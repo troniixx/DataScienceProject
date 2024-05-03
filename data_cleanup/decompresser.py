@@ -4,6 +4,14 @@ from io import TextIOWrapper
 from zstandard import ZstdDecompressor
 from os.path import basename, splitext
 
+"""
+This script is only a test script to decompress a zst file and write the contents to a csv file.
+its USELESS for our purposes as we are working with JSON files.
+Generates a csv file from a zst file
+
+USE tojson.py FOR GENERATING JSON FILES INSTEAD OF CSV FILES
+"""
+
 ZST_FILE = "data/raw/PoliticsPeopleTwitter_comments.zst" # CHANGE THIS
 OUTPUT_PATH = f"data/cleaned/{splitext(basename(ZST_FILE))[0]}_cleaned.csv" # DO NOT CHANGE THIS
 

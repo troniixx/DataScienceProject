@@ -2,6 +2,11 @@ import json
 from textblob import TextBlob
 from os.path import basename, splitext
 
+"""
+Uses the json file gathered from (getdata.py) and performs sentiment analysis on the comments and
+stores the sentiment in a new json file.
+"""
+
 JSON_CLEAN = "/Users/merterol/Desktop/UZH/CompLing:CompSci/CompSci/Sem2/ESC403/ESC403_Project/DataScienceProject/cleaned jsons/cleaned/Switzerland_comments_pretty_cleaned.json"
 OUT_PATH = f"/Users/merterol/Desktop/UZH/CompLing:CompSci/CompSci/Sem2/ESC403/ESC403_Project/DataScienceProject/sentiment/sentiment_{splitext(basename(JSON_CLEAN))[0]}.json"
 
@@ -27,9 +32,6 @@ def sentiment_analysis(json_path):
     print("Sentiment analysis has been saved to a JSON file.")
     
     return sentiment_data
-
-if __name__ == "__main__":
-    sentiment_data = sentiment_analysis(JSON_CLEAN)
     
 # Polarity [-1,1], -1 negative sentiment and 1 positive sentiment.
 # Higher Subjectivity [0,1] means that the text contains personal opinion rather than factual information

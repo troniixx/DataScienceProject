@@ -2,6 +2,11 @@ import json
 from os.path import basename, splitext
 from datetime import datetime, timezone
 
+"""
+Changes the format of the "prettified" JSON file (tojson.py) to a dictionary with the date as the key and the comment as the value.
+--> Removes unnecessary data and changes the timestamp to a readable date.
+"""
+
 JSON_PATH = "/Users/merterol/Desktop/UZH/CompLing:CompSci/CompSci/Sem2/ESC403/ESC403_Project/DataScienceProject/data/pretty jsons/Switzerland_comments_pretty.json"
 OUT_PATH = f"/Users/merterol/Desktop/UZH/CompLing:CompSci/CompSci/Sem2/ESC403/ESC403_Project/DataScienceProject/json_files/cleaned/{splitext(basename(JSON_PATH))[0]}_cleaned.json"
 
@@ -22,7 +27,3 @@ def transform(json_path, out_path):
         json.dump(comment_date, output_file, indent=4)
     
     return comment_date
-
-if __name__ == "__main__":
-    transformed_data = transform(JSON_PATH, OUT_PATH)
-    print("Transformed data has been saved to:", OUT_PATH)
