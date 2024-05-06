@@ -1,6 +1,5 @@
-import os
 import sys
-from os.path import basename, splitext, join, dirname, abspath
+from os.path import basename, splitext, join, dirname
 
 # Add the directories containing the custom modules to the path
 sys.path.append(join(dirname(__file__), "data_cleanup"))
@@ -11,7 +10,7 @@ import processing.getdata as getdata
 import processing.basic_nlp as basic_nlp
 
 # *** ONLY CHANGE THIS ***
-ZST_NAME = "shavedgirls_comments.zst"
+ZST_NAME = "Switzerland_comments.zst"
 # *** ONLY CHANGE THIS ***
 
 def main():
