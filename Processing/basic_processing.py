@@ -33,7 +33,6 @@ DESIRED_COLUMNS = [
         "subreddit",
         "category",
 
-
         "hidden",
         "hide_score",
     ]
@@ -59,6 +58,8 @@ def conversion(input, output):
     print(f"Converted JSON to CSV, Filepath: {output}")
 
     return
+
+    print("test")
 
     ### CODE BELOW IS FOR ANALYZING DATA & READING OUT COLUMNS
     json_objects = []

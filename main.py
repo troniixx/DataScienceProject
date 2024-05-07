@@ -1,6 +1,5 @@
-import os
 import sys
-from os.path import basename, splitext, join, dirname, abspath
+from os.path import basename, splitext, join, dirname
 
 # Add the directories containing the custom modules to the path
 sys.path.append(join(dirname(__file__), "data_cleanup"))
@@ -13,7 +12,11 @@ import processing.basic_nlp as basic_nlp
 import processing.basic_processing as basic_proc
 
 # *** ONLY CHANGE THIS ***
+<<<<<<< HEAD
 ZST_NAME = "sustainability_submissions.zst"
+=======
+ZST_NAME = "Switzerland_comments.zst"
+>>>>>>> d54072a308e70e3f8f5663ac51fbf7f0bc02e72e
 # *** ONLY CHANGE THIS ***
 PROCESS_ONLY = True
 
