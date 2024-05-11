@@ -12,7 +12,7 @@ import processing.basic_nlp as basic_nlp
 import processing.basic_processing as basic_proc
 
 # *** ONLY CHANGE THIS ***
-ZST_NAME = "CertifiedNews_comments.zst"
+ZST_NAME = "theworldnews_comments.zst"
 # *** ONLY CHANGE THIS ***
 PROCESS_ONLY = True
 
