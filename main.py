@@ -12,11 +12,7 @@ import processing.basic_nlp as basic_nlp
 import processing.basic_processing as basic_proc
 
 # *** ONLY CHANGE THIS ***
-<<<<<<< HEAD
-ZST_NAME = "sustainability_submissions.zst"
-=======
-ZST_NAME = "Switzerland_comments.zst"
->>>>>>> d54072a308e70e3f8f5663ac51fbf7f0bc02e72e
+ZST_NAME = "CertifiedNews_comments.zst"
 # *** ONLY CHANGE THIS ***
 PROCESS_ONLY = True
 
