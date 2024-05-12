@@ -13,8 +13,9 @@ import processing.basic_processing as basic_proc
 
 # *** ONLY CHANGE THIS ***
 ZST_NAME = "theworldnews_comments.zst"
+ZST_NAME = "theworldnews_submissions.zst"
 # *** ONLY CHANGE THIS ***
-PROCESS_ONLY = True
+PROCESS_ONLY = False
 
 def main():
     # Set up a base directory relative to the script location

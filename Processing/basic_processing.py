@@ -15,8 +15,8 @@ import matplotlib.dates as mdates
 
 from textblob import TextBlob
 
-CLEANED_CSV = "data\cleaned\sustainability_submissions_cleaned.csv"
-CLEANED_JSON = "data\cleaned\sustainability_submissions_cleaned.csv"
+#CLEANED_CSV = "data\cleaned\sustainability_submissions_cleaned.csv"
+#CLEANED_JSON = "data\cleaned\sustainability_submissions_cleaned.csv"
 
 DESIRED_COLUMNS = [
         "created_utc",
@@ -60,7 +60,7 @@ def conversion(input, output):
 
     df = df[DESIRED_COLUMNS]
     df.replace(r"\n"," ",inplace=True, regex=True)
-
+    df.replace(r"\r"," ",inplace=True, regex=True)
 
     df.dropna(subset=["title","created_utc"])
 
@@ -98,7 +98,7 @@ def conversion(input, output):
     df.to_csv(output)
     print(f"Converted JSON to CSV, Filepath: {output}")
 
-    plot_posts(df)
+#    plot_posts(df)
 
     return
 
@@ -179,3 +179,24 @@ def plot_posts(df):
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.savefig("post_subjectivity.png")
+
+
+def merge_posts_and_comments(df_posts,dfcomments,output):
+
+    df_new = pd.DataFrame(data={
+        "Date": pd.to_datetime(df_posts.timestamp),
+        "Text": df_posts.title + " | " + df_posts.selftext,
+        "Polarity": (df_posts.title_polarity + df_posts.text_polarity) * 0.5,
+        "Subjectivity": (df_posts.title_subjectivity + df_posts.text_subjectivity) * 0.5,
+    })
+
+
+    df_merged = pd.merge(dfcomments, df_new, on="Date", how="inner").to_csv(output, index=False)
+
+    return df_merged
+
+
+
+
+
+    
