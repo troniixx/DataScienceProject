@@ -77,9 +77,13 @@ What data processing can be done?
     Predictor Model for classificatino?
 
 ### ToDO List till Friday (Presi abgab)
-- select which subbredits (3-4)
-- define Hypothesis
-- insert the chosen subreddits data into the code
-- get plots
-- evaluate the plots
-- finish presi
+- select which subbredits (3-4) (kasper)
+- define Hypothesis (all)
+- finish code, regression tree (mert)
+- insert the chosen subreddits data into the code (kasper)
+- get plots & screenshot (kasper)
+- educate about evaluation of plots (ishana, jasmin)
+- evaluate the plots (all on friday)
+- finish presi (on friday all together)
+
+- 
