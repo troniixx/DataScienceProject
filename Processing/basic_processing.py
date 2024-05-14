@@ -146,30 +146,51 @@ def process_csv(input):
 
 
 
-def plot_posts(df):
+def plot_posts(input):
+
+    df = pd.read_csv(input)
 
     print("Plotting Text Posts")
 
     df["smoothed_pol"] = df["text_polarity"].rolling(window=30, center=True).mean()
     df["smoothed_sub"] = df["text_subjectivity"].rolling(window=30, center=True).mean()
-    df.index = pd.to_datetime(df.timestamp)
+
+    df["pol_scaled"] = df["smoothed_pol"].apply(lambda x: x* 10000.0)
+    df["sub_scaled"] = df["smoothed_sub"].apply(lambda x: x* 10000.0)
+
+    df["timestamp"] = pd.to_datetime(df.timestamp)
+    
+    posts_per_month = df.resample("ME", on="timestamp").size()
+    votes_per_month = df.resample("ME", on="timestamp")['score'].sum()
+
+    min_datetime = df.timestamp.min()
+    max_datetime = df.timestamp.max()
+
+#    df.index = pd.to_datetime(df.timestamp)
 
     # Plot for Polarity
-    plt.figure(figsize=(15, 10))  # Set the figure size
-    plt.plot(df.index, df["smoothed_pol"], label="Polarity", color="blue", marker = None, markersize = 2, alpha = 0.5)
+    fig,ax = plt.subplots(figsize=(15, 10))  # Set the figure size
+
+    posts_per_month.plot(kind='bar', ax=ax,colormap="Paired", label="Posts Count")
+#    votes_per_month.plot(kind='bar', ax=ax)
+    ax.plot(df.timestamp, df["pol_scaled"], label="Polarity", color="blue", marker = None, markersize = 2, alpha = 0.5)
+    
     plt.title("Polarity Analysis Over Time (2016 - Latest)")
     plt.xlabel("Date")
     plt.ylabel("Polarity Score")
-    plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
+
+
+    ax.xaxis.set_major_locator(mdates.YearLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
     plt.grid(True)
     plt.xticks(rotation=45)
     plt.tight_layout()
+    plt.legend()
     plt.savefig("post_polarity.png")
 
     # Plot for Subjectivity
     plt.figure(figsize=(15, 10))  # Set the figure size
-    plt.plot(df.index, df["smoothed_sub"], label="Subjectivity", color="green", marker = None, markersize = 2, alpha = 0.5)
+    plt.plot(df.timestamp, df["sub_scaled"], label="Subjectivity", color="green", marker = None, markersize = 2, alpha = 0.5)
     plt.title("Subjectivity Analysis Over Time (2016 - Latest)")
     plt.xlabel("Date")
     plt.ylabel("Subjectivity Score")
