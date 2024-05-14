@@ -82,7 +82,7 @@ What data processing can be done?
 - finish code, regression tree (mert)
 - insert the chosen subreddits data into the code (kasper)
 - get plots & screenshot (kasper)
-- educate about evaluation of plots (ishana)
+- educate about evaluation of plots (ishana, jasmin)
 - evaluate the plots (all on friday)
 - finish presi (on friday all together)
 
