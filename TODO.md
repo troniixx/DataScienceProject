@@ -75,3 +75,11 @@ What data processing can be done?
     EDA on data?
         Time Series Analysis;
     Predictor Model for classificatino?
+
+### ToDO List till Friday (Presi abgab)
+- select which subbredits (3-4)
+- define Hypothesis
+- insert the chosen subreddits data into the code
+- get plots
+- evaluate the plots
+- finish presi
