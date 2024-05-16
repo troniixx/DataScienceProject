@@ -30,7 +30,7 @@ containing JSON objects on each line of the file.
 ### Data Cleaning
 
 main.py
-Serves as a management function for running the data processing pipeline and creating transitionary files of the data.
+Serves as a management file for running the data processing pipeline and creating transitionary files of the data.
 The ZST_NAME variable determines which file is processed. Depending on whether it contains posts or comments, it is processed slightly differently. The important data transformations (Date and Sentiment Analysis) are the same, with a difference in what data and columns are filtered.
 
 #### Pipeline for Comments
