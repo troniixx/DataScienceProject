@@ -12,8 +12,8 @@ import processing.basic_nlp as basic_nlp
 import processing.basic_processing as basic_proc
 
 # *** ONLY CHANGE THIS ***
-ZST_NAME = "theworldnews_comments.zst"
-ZST_NAME = "theworldnews_submissions.zst"
+ZST_NAME = "europe_comments.zst"
+#ZST_NAME = "europe_submissions.zst"
 # *** ONLY CHANGE THIS ***
 PROCESS_ONLY = False
 
