@@ -22,7 +22,7 @@ containing JSON objects on each line of the file.
 	- Random Forest
 	- SVM (Unused due to lackluster performance)
 
-
+Note: Jupyter Notebooks used in the Presentation are partially corrupted due to the large data size. Ideally, the pipeline should be fully ran in order to generate the correct data and segment the memory requirements.
 
 
 ## Code Files Used
